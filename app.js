@@ -120,6 +120,7 @@ function checkout() {
 }
 
 function checkoutSA() {
+  //@ts-ignore
   Swal.fire({
     title: 'Are you sure you want to checkout?',
     text: "Double check your cart!",
@@ -132,6 +133,7 @@ function checkoutSA() {
     if (!result.isConfirmed) {
       return
     }
+    //@ts-ignore
     Swal.fire(
       'Ordered Successfully!',
       'It should be ready in about 5 minutes',
