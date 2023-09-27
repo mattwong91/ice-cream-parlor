@@ -11,7 +11,116 @@
   <title>Document</title>
 </head>
 
-<body>
+<body class="container-fluid bg-color">
+
+  <main>
+    <section class="row">
+
+      <!-- SECTION CART -->
+      <div class="col-5">
+        <div id="cart"></div>
+        <div>
+          Total: $ <span id="total">0.00</span>
+        </div>
+      </div>
+      <!-- !SECTION -->
+
+      <!-- SECTION CHOICES -->
+      <div class="col-7">
+        <section class="row">
+
+          <!-- SECTION TOPPINGS  -->
+          <div class="col-12">
+            <p>Toppings</p>
+            <section class="row">
+              <div class="col-4">
+                <div class="mb-2 card text-center p-2" onclick="orderTopping('Sprinkles')">
+                  <img class="img-fluid"
+                    src="https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    alt="Sprinkles">
+                  <p class="my-1">Sprinkles $<span>2</span> </p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="mb-2 card text-center p-2" onclick="orderTopping('Chocolate Chips')">
+                  <img class="img-fluid"
+                    src="https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    alt="Chocolate Chips">
+                  <p class="my-1">Chocolate Chips $<span>2</span> </p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="mb-2 card text-center p-2" onclick="orderTopping('Cookie Chunks')">
+                  <img class="img-fluid"
+                    src="https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    alt="Cookie Chunks">
+                  <p class="my-1">Cookie Chunks $<span>2</span> </p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- !SECTION -->
+
+          <!-- SECTION VESSELS -->
+          <div class="col-12">
+            <p>Vessels</p>
+            <section class="row">
+              <div class="col-4">
+                <div class="mb-2 card text-center p-2">
+                  <img class="img-fluid"
+                    src="https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    alt="Sprinkles">
+                  <p class="my-1">Waffle Cone $<span>2</span> </p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- !SECTION -->
+
+          <!-- SECTION ICE CREAM -->
+          <div class="col-12">
+            <p>Ice Cream</p>
+            <section class="row">
+              <div class="col-4">
+                <div class="mb-2 card text-center p-2" onclick="orderIceCream('Vanilla')">
+                  <img class="img-fluid"
+                    src="https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    alt="Sprinkles">
+                  <p class="my-1">Vanilla $<span>2</span> </p>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="mb-2 card text-center p-2" onclick="orderIceCream('Cookie Dough')">
+                  <img class="img-fluid"
+                    src="https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    alt="Sprinkles">
+                  <p class="my-1">Cookie Dough $<span>2</span> </p>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="mb-2 card text-center p-2" onclick="orderIceCream('Strawberry')">
+                  <img class="img-fluid"
+                    src="https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    alt="Sprinkles">
+                  <p class="my-1">Strawberry $<span>2</span> </p>
+                </div>
+              </div>
+
+          </div>
+          <!-- !SECTION -->
+
+        </section>
+      </div>
+      <!-- !SECTION -->
+
+    </section>
+    </div>
+
+    </section>
+  </main>
+
 
   <script src="app.js"></script>
 </body>
