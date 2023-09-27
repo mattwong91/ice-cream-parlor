@@ -13,15 +13,46 @@
 
 <body class="container-fluid bg-color">
 
+  <header>
+    <p class="fs-2 fw-bold">
+      <i class="mdi mdi-ice-cream fs-1"></i>
+      Ice Cream Parlor
+    </p>
+  </header>
   <main>
     <section class="row">
 
       <!-- SECTION CART -->
       <div class="col-5">
-        <div id="cart"></div>
-        <div>
-          Total: $ <span id="total">0.00</span>
+        <div class="container cart-style">
+
+          <section class="row border-btm text-center">
+            <div class="col-4 my-2">
+              <b>Name</b>
+            </div>
+            <div class="col-2 my-2">
+              <b>Qty</b>
+            </div>
+            <div class="col-3 my-2">
+              <b>Each</b>
+            </div>
+            <div class="col-3 my-2">
+              <b>Total</b>
+            </div>
+          </section>
+
+          <section id="cart" class="row border-btm text-center">
+            <span class="my-3">No items are in the cart.</span>
+          </section>
+
+          <div class="col-12 text-end my-2">
+            <p>
+              Total: $ <span id="total">0.00</span>
+            </p>
+            <button onclick="checkoutSA()" class="btn btn-primary">Checkout</button>
+          </div>
         </div>
+
       </div>
       <!-- !SECTION -->
 
@@ -35,7 +66,7 @@
             <section class="row">
               <div class="col-4">
                 <div class="mb-2 card text-center p-2" onclick="orderTopping('Sprinkles')">
-                  <img class="img-fluid"
+                  <img
                     src="https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                     alt="Sprinkles">
                   <p class="my-1">Sprinkles $<span>2</span> </p>
@@ -43,16 +74,16 @@
               </div>
               <div class="col-4">
                 <div class="mb-2 card text-center p-2" onclick="orderTopping('Chocolate Chips')">
-                  <img class="img-fluid"
-                    src="https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                  <img
+                    src="https://images.unsplash.com/photo-1585502866757-30ae9e509e31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80"
                     alt="Chocolate Chips">
                   <p class="my-1">Chocolate Chips $<span>2</span> </p>
                 </div>
               </div>
               <div class="col-4">
                 <div class="mb-2 card text-center p-2" onclick="orderTopping('Cookie Chunks')">
-                  <img class="img-fluid"
-                    src="https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                  <img
+                    src="https://images.unsplash.com/photo-1649634437312-c005a922d448?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                     alt="Cookie Chunks">
                   <p class="my-1">Cookie Chunks $<span>2</span> </p>
                 </div>
@@ -62,19 +93,19 @@
           <!-- !SECTION -->
 
           <!-- SECTION VESSELS -->
-          <div class="col-12">
+          <!-- <div class="col-12">
             <p>Vessels</p>
             <section class="row">
               <div class="col-4">
                 <div class="mb-2 card text-center p-2">
-                  <img class="img-fluid"
+                  <img
                     src="https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                     alt="Sprinkles">
                   <p class="my-1">Waffle Cone $<span>2</span> </p>
                 </div>
               </div>
             </section>
-          </div>
+          </div> -->
           <!-- !SECTION -->
 
           <!-- SECTION ICE CREAM -->
@@ -83,27 +114,27 @@
             <section class="row">
               <div class="col-4">
                 <div class="mb-2 card text-center p-2" onclick="orderIceCream('Vanilla')">
-                  <img class="img-fluid"
-                    src="https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                    alt="Sprinkles">
+                  <img
+                    src="https://images.unsplash.com/photo-1549395156-e0c1fe6fc7a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80"
+                    alt="Vanilla">
                   <p class="my-1">Vanilla $<span>2</span> </p>
                 </div>
               </div>
 
               <div class="col-4">
                 <div class="mb-2 card text-center p-2" onclick="orderIceCream('Cookie Dough')">
-                  <img class="img-fluid"
-                    src="https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                    alt="Sprinkles">
+                  <img
+                    src="https://images.unsplash.com/photo-1625234969503-49c7f28bc6ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1285&q=80"
+                    alt="Cookie Dough">
                   <p class="my-1">Cookie Dough $<span>2</span> </p>
                 </div>
               </div>
 
               <div class="col-4">
                 <div class="mb-2 card text-center p-2" onclick="orderIceCream('Strawberry')">
-                  <img class="img-fluid"
-                    src="https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                    alt="Sprinkles">
+                  <img
+                    src="https://images.unsplash.com/photo-1555529211-3237f6e13d33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1303&q=80"
+                    alt="Strawberry">
                   <p class="my-1">Strawberry $<span>2</span> </p>
                 </div>
               </div>
@@ -121,7 +152,7 @@
     </section>
   </main>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="app.js"></script>
 </body>
 
